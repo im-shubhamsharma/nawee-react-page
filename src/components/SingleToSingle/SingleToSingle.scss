@@ -1,0 +1,135 @@
+.single-container {
+  padding-top: 60px;
+}
+
+.sub-container {
+  display: flex;
+  gap: 40px;
+
+  .btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  img {
+    width: 18px;
+  }
+}
+
+.form-container {
+  display: flex;
+  margin: 80px 0;
+  gap: 40px;
+
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 154%;
+    color: #000000;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 154%;
+    color: #000000;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+}
+
+.form-receiver-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+
+  .location-btn {
+    font-family: "Syne";
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding: 18px 0;
+
+    &:focus,
+    &:active {
+      outline: 2px solid rgba(250, 136, 50, 1);
+    }
+  }
+}
+
+.form-radio-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  label {
+    cursor: pointer;
+  }
+
+  .label2 {
+    margin-right: 100px;
+  }
+
+  .radio-input {
+    height: 20px;
+    width: 20px;
+    background: #fffbf8;
+    border: 1px solid #fa8832;
+    border-radius: 5px;
+  }
+}
+
+.form-parcel-desc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sub-container {
+    justify-content: center;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-receiver-info {
+    width: 100%;
+  }
+
+  .form-parcel-desc {
+    width: 100%;
+  }
+
+  .form-radio-btn-container {
+    gap: 10px;
+
+    .label2 {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .sub-container {
+    gap: 10px;
+  }
+
+  .form-radio-btn-container {
+    gap: 10px;
+
+    .label2 {
+      margin-right: 30px;
+    }
+  }
+}
